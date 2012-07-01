@@ -1,0 +1,20 @@
+name: DeathCreative
+version: 0.1
+website: http://modcrafting.com
+author: Deathmarine
+description: >
+             Fun Plugin for Bukkit.
+main: com.modcrafting.deathcreative.DeathCreative
+#Load her up, SON#
+commands:
+  creative:
+    description: Command Access
+    usage: /<command>
+permissions:
+  deathcreative.*:
+    description: Allows the Administration to Full Control
+    children:
+      deathcreative.use: true
+  deathcreative.use:
+    default: op
+    description: Allows a player use commands

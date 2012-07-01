@@ -1,0 +1,8 @@
+EnableCustomList: false
+#if above is true, inventory will load below up to 99 items#
+Items:
+- 1
+- 2
+- 3
+#Displays a inventory#
+WindowLabel: 'Creative'
