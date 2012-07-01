@@ -40,7 +40,7 @@ public class DeathCreative extends JavaPlugin implements Listener, CommandExecut
 			int size = 12;
 			Inventory inventory = this.getServer().createInventory(player, row*size, config.getString("WindowLabel", "Creative"));
 			//84
-			if(config.getBoolean("EnableCustomList", false)){
+			if(!config.getBoolean("EnableCustomList", false)){
 				Integer[] blocks = {1,2,3,4,5,7,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,28,30,33,35,41,42,43,44,45,46,47,48,49,50,52,53,54,55,56,57,58,60,61,64,65,66,67,69,70,72,73,75,77,78,79,80,81,82,84,85,86,87,88,89,90,92,93,96,98,101,102,103,106,107,108,109,110,111,112,113,114};
 				for (Integer i: blocks){
 					ItemStack item = new ItemStack(i, 1);
